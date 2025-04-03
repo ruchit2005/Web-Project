@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./global.css";
+// import {useEffect} from 'react'
 import axios from 'axios';
 
 const ImageUploader = () => {
@@ -44,7 +45,6 @@ const ImageUploader = () => {
         capture="environment"
         onChange={handleImageChange}
       />
-      
       {/* Conditionally render the image preview */}
       {selectedImage && (
         <div>
